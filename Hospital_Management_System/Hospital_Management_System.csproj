@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{615E569C-120F-4184-9232-315FB8901569}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hospital_Management_System</RootNamespace>
+    <AssemblyName>Hospital_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Guna\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 2.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABill.Designer.cs">
+      <DependentUpon>ABill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABook.Designer.cs">
+      <DependentUpon>ABook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADashboard.Designer.cs">
+      <DependentUpon>ADashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADiagnosis.Designer.cs">
+      <DependentUpon>ADiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADoctor.Designer.cs">
+      <DependentUpon>ADoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AHome.Designer.cs">
+      <DependentUpon>AHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AInventory.Designer.cs">
+      <DependentUpon>AInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APatient.Designer.cs">
+      <DependentUpon>APatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bill.Designer.cs">
+      <DependentUpon>bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book.Designer.cs">
+      <DependentUpon>book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="diagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diagnosis.Designer.cs">
+      <DependentUpon>diagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PBill.Designer.cs">
+      <DependentUpon>PBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PBook.Designer.cs">
+      <DependentUpon>PBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDiagnosis.Designer.cs">
+      <DependentUpon>PDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDoctor.Designer.cs">
+      <DependentUpon>PDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PHome.Designer.cs">
+      <DependentUpon>PHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PPatient.Designer.cs">
+      <DependentUpon>PPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signin.Designer.cs">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Verify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verify.Designer.cs">
+      <DependentUpon>Verify.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ABill.resx">
+      <DependentUpon>ABill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABook.resx">
+      <DependentUpon>ABook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard.resx">
+      <DependentUpon>ADashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADiagnosis.resx">
+      <DependentUpon>ADiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADoctor.resx">
+      <DependentUpon>ADoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AHome.resx">
+      <DependentUpon>AHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AInventory.resx">
+      <DependentUpon>AInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APatient.resx">
+      <DependentUpon>APatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bill.resx">
+      <DependentUpon>bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book.resx">
+      <DependentUpon>book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diagnosis.resx">
+      <DependentUpon>diagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PBill.resx">
+      <DependentUpon>PBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PBook.resx">
+      <DependentUpon>PBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDiagnosis.resx">
+      <DependentUpon>PDiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDoctor.resx">
+      <DependentUpon>PDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PHome.resx">
+      <DependentUpon>PHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPatient.resx">
+      <DependentUpon>PPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Signin.resx">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verify.resx">
+      <DependentUpon>Verify.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home4.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
