@@ -29,7 +29,7 @@ namespace Hospital_Management_System
             Con.Open();
             SqlCommand cmd = Con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from Patient ";
+            cmd.CommandText = "select * from Booking ";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
